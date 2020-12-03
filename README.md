@@ -310,13 +310,15 @@ The simplest approach (although not required) is to have an App.svelte file like
 
 The layout and/or the component that matches the active route will be rendered inside _Router_.
 
-Options is an object that supports three properties:
+Options is an object that supports these properties:
 
 _gaPageviews_ that will record route changes as pageviews in Google Analytics. It's disabled by default.
 
 _lang_ a string that sets the language that the router will use to match the active route. Check [Localisation](#localisation)
 
 _defaultLanguage_ If no language is set the active route will return this value as the active language.
+
+_prefix_ mount your routes onto a url prefix.  Check [Route prefix](#route-prefix).
 
 ### Route
 
